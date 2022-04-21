@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class RegistrationActivity extends AppCompatActivity {
     EditText nim,password, nama,kelas,deskripsi;
@@ -41,6 +42,8 @@ public class RegistrationActivity extends AppCompatActivity {
             editor.putString("kelas", kelas.getText().toString());
             editor.putString("deskripsi", deskripsi.getText().toString());
             editor.apply();
+            //Toast berhasil mendaftar
+            Toast.makeText(this, "Berhasil mendaftar", Toast.LENGTH_SHORT).show();
            //intent to login activity
            startActivity(new Intent(RegistrationActivity.this, LoginActivity.class));
         });

@@ -11,6 +11,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     TextView nama;
@@ -42,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
             editor.putBoolean("isLogin", false);
             //commit changes
             editor.commit();
+            //toast berhasil logout
+            Toast.makeText(this, "Berhasil logout", Toast.LENGTH_SHORT).show();
             //intent to login activity
             startActivity(new Intent(MainActivity.this, LoginActivity.class));
             finish();

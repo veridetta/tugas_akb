@@ -47,6 +47,9 @@ public class LoginActivity extends AppCompatActivity {
                     //intent to main activity
                     startActivity(new Intent(getApplicationContext(), MainActivity.class));
                     finish();
+                }else{
+                    //TOast wrong nim or password
+                    Toast.makeText(this, "Wrong NIM or Password", Toast.LENGTH_SHORT).show();
                 }
             }
         });
