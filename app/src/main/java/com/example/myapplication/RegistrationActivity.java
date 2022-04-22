@@ -25,7 +25,7 @@ public class RegistrationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_registration);
         //hide navbar
         getSupportActionBar().hide();
-        nim = findViewById(R.id.txtnim);
+        nim = findViewById(R.id.txtusername);
         password = findViewById(R.id.txtpassword);
         nama = findViewById(R.id.txtNama);
         kelas = findViewById(R.id.txtKelas);

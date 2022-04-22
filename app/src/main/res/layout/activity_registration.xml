@@ -56,7 +56,7 @@
                         android:hint="Masukan NIM"
                         android:textColor="@color/teal_700"
                         android:textColorHint="@color/teal_700"
-                        android:id="@+id/txtnim" />
+                        android:id="@+id/txtusername" />
                 </com.google.android.material.textfield.TextInputLayout>
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"

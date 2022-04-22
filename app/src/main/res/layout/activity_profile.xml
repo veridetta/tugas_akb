@@ -13,16 +13,25 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="@dimen/_13sdp">
-            <ImageView
-                android:layout_width="@dimen/_200sdp"
-                android:layout_height="@dimen/_200sdp"
-                android:background="@color/teal_700"
-                android:layout_gravity="center"/>
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardMaxElevation="@dimen/_6sdp"
+                app:cardCornerRadius="@dimen/_103sdp"
+                app:cardElevation="@dimen/_4sdp">
+                <ImageView
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_280sdp"
+                    android:background="@drawable/pp"
+                    android:layout_gravity="center"/>
+            </androidx.cardview.widget.CardView>
+
             <TextView
                 android:id="@+id/textNama"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Hello Nama"
+                android:text="Hello Dila Adiliani"
                 android:textSize="@dimen/_22sdp"
                 android:textStyle="bold"
                 android:layout_marginTop="@dimen/_8sdp"
@@ -31,7 +40,7 @@
                 android:id="@+id/textNim"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nim 22222"
+                android:text="Nim : 10119098"
                 android:textSize="@dimen/_13sdp"
                 android:layout_marginTop="@dimen/_8sdp"
                 android:textColor="@color/teal_700" />
@@ -39,7 +48,7 @@
                 android:id="@+id/textKelas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TKJ-1 (Kelas)"
+                android:text="IF-3 (Kelas)"
                 android:textSize="@dimen/_13sdp"
                 android:layout_marginTop="@dimen/_8sdp"
                 android:textColor="@color/teal_700" />
@@ -61,7 +70,7 @@
                 android:id="@+id/textDes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Saya adalah bla bla bla"
+                android:text="Nama saya Dila Adiliani, asal saya dari kota Karawang, saya memilih kuliah di universitas komputer Indonesia (UNIKOM) dengan fakultas teknik dan ilmu komputer di jurusan teknik informatika."
                 android:textSize="@dimen/_13sdp"
                 android:layout_marginTop="@dimen/_8sdp"
                 android:textColor="@color/teal_700" />

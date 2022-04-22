@@ -25,9 +25,9 @@ public class ProfileActivity extends AppCompatActivity {
         nim = findViewById(R.id.textNim);
         deskripsi = findViewById(R.id.textDes);
         //set from sharedpreferences
-        nama.setText(sharedPreferences.getString("nama", ""));
-        kelas.setText(sharedPreferences.getString("kelas", ""));
-        nim.setText(sharedPreferences.getString("nim", ""));
+        nama.setText("Dila Adiliani");
+        kelas.setText("IF-3");
+        nim.setText("10119098");
         deskripsi.setText(sharedPreferences.getString("deskripsi", ""));
     }
 }

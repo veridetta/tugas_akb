@@ -6,63 +6,73 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
     <!-- membuat halaman login-->
-    <androidx.core.widget.NestedScrollView
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <LinearLayout
+        <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!-- membuat login -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_28sdp">
+                    <TextView
+                        android:id="@+id/textNama"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hello Nama"
+                        android:textSize="@dimen/_30sdp"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_700" />
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Selamat datang di Aplikasi ini"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_700" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_13sdp">
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnProfil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lihat Profil"
+                        android:background="@color/teal_700"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_marginBottom="@dimen/_13sdp"/>
+                    <!-- button logout -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnLogout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Logout"
+                        android:background="@color/red_500"
+                        android:backgroundTint="@color/red_500"
+                        android:textSize="@dimen/_13sdp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <!-- set include layout to bottom navigation -->
+        <include layout="@layout/bottom_navigation"
+            android:layout_alignParentBottom="true"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <!-- membuat login -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="@dimen/_28sdp">
-                <TextView
-                    android:id="@+id/textNama"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Hello Nama"
-                    android:textSize="@dimen/_30sdp"
-                    android:textStyle="bold"
-                    android:textColor="@color/teal_700" />
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Selamat datang di Aplikasi ini"
-                    android:textSize="@dimen/_13sdp"
-                    android:textStyle="bold"
-                    android:textColor="@color/teal_700" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="@dimen/_13sdp">
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnProfil"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Lihat Profil"
-                    android:background="@color/teal_700"
-                    android:textSize="@dimen/_13sdp"
-                    android:layout_marginBottom="@dimen/_13sdp"/>
-                <!-- button logout -->
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnLogout"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Logout"
-                    android:background="@color/red_500"
-                    android:backgroundTint="@color/red_500"
-                    android:textSize="@dimen/_13sdp" />
-            </LinearLayout>
+            android:layout_width="match_parent" />
+    </RelativeLayout>
 
-
-        </LinearLayout>
-    </androidx.core.widget.NestedScrollView>
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

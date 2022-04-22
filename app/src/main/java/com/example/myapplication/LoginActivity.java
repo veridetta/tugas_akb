@@ -26,7 +26,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         //hide navbar
         getSupportActionBar().hide();
-        nim = findViewById(R.id.txtnim);
+        nim = findViewById(R.id.txtusername);
         password = findViewById(R.id.txtpassword);
         btnLogin = findViewById(R.id.btnLogin);
         btnSignup = findViewById(R.id.btnSignup);
