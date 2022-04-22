@@ -28,6 +28,6 @@ public class ProfileActivity extends AppCompatActivity {
         nama.setText("Dila Adiliani");
         kelas.setText("IF-3");
         nim.setText("10119098");
-        deskripsi.setText(sharedPreferences.getString("deskripsi", ""));
+        //deskripsi.setText(sharedPreferences.getString("deskripsi", ""));
     }
 }
